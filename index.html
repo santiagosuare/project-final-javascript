@@ -11,6 +11,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 
@@ -32,84 +33,85 @@
     </nav>
 
 
+    <div class="fondo_cabecera">
     <!-- ITEMS -->
-    <div class="row">
-        <div class="col s1 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img width="400" height="400" src="./images/el señor de los anillos 1.jpg">
-                    <span class="transparent-text card-title">El Señor de los Anillos</span>
-                    <span class="blue-grey-text text-darken-4 card-title2">$ 1000</span>
-                    <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
-                            class="material-icons">add</i></a>
+        <div class="row">
+            <div class="col s1 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img width="400" height="400" src="./images/el señor de los anillos 1.jpg">
+                        <span class="transparent-text card-title">El Señor de los Anillos</span>
+                        <span class="blue-grey-text text-darken-4 card-title2">$ 1000</span>
+                        <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>El Señor de los Anillos:<br>La comunidad del anillo</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <p>El Señor de los Anillos:<br>La comunidad del anillo</p>
+            </div>
+            <div class="col s1 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img width="400" height="400" src="./images/harry potter 1.jpg">
+                        <span class="transparent-text card-title">Harry Potter</span>
+                        <span class="blue-grey-text text-darken-4 card-title2">$ 2000</span>
+                        <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>Harry Potter<br>Y la piedra filosofal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s1 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img width="400" height="400" src="./images/narnia.jpg">
+                        <span class="transparent-text card-title">Narnia</span>
+                        <span class="blue-grey-text text-darken-4 card-title2">$ 1500</span>
+                        <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>Narnia<br>El leon, la bruja y el ropero</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col s1 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img width="400" height="400" src="./images/harry potter 1.jpg">
-                    <span class="transparent-text card-title">Harry Potter</span>
-                    <span class="blue-grey-text text-darken-4 card-title2">$ 2000</span>
-                    <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
-                            class="material-icons">add</i></a>
+
+        <blockquote>
+            Seguimiento de Compra
+        </blockquote>
+
+
+
+        <div class="collection">
+            <a href="#!" class="collection-item"><span id="total" class="badge red-text">$ 0</span>Carrito</a>
+            <a href="#!" class="collection-item"><span class="badge">21 %</span>IVA</a>
+            <a href="#!" class="collection-item"><span id="totalConIVA" class="badge">$ 0</span>Importe Total c/IVA</a>
+            <a href="#!" class="collection-item"><span id="totalSinIVA" class="badge">$ 0</span>Importe Total s/IVA</a>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="row">
+            <div class="button reset">
+                <div class="col s2 push-s8">
+                    <button id="btn" class="btn waves-effect waves-light" type="submit" name="action">Resetear
+                        <i class="material-icons right">autorenew</i>
+                    </button>
                 </div>
-                <div class="card-content">
-                    <p>Harry Potter<br>Y la piedra filosofal</p>
+            </div>
+            <div class="button buy">
+                <div class="col s2 push-s8">
+                    <button id="btn" class="btn waves-effect waves-light" type="submit" name="action1">Comprar
+                        <i class="material-icons right">beenhere</i>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="col s1 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img width="400" height="400" src="./images/narnia.jpg">
-                    <span class="transparent-text card-title">Narnia</span>
-                    <span class="blue-grey-text text-darken-4 card-title2">$ 1500</span>
-                    <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
-                            class="material-icons">add</i></a>
-                </div>
-                <div class="card-content">
-                    <p>Narnia<br>El leon, la bruja y el ropero</p>
-                </div>
-            </div>
         </div>
     </div>
-
-    <blockquote>
-        Seguimiento de Compra
-    </blockquote>
-
-
-
-    <div class="collection">
-        <a href="#!" class="collection-item"><span id="total" class="badge red-text">$ 0</span>Carrito</a>
-        <a href="#!" class="collection-item"><span class="badge">21 %</span>IVA</a>
-        <a href="#!" class="collection-item"><span id="totalConIVA" class="badge">$ 0</span>Importe Total c/IVA</a>
-        <a href="#!" class="collection-item"><span id="totalSinIVA" class="badge">$ 0</span>Importe Total s/IVA</a>
-    </div>
-
-    <!-- BOTONES -->
-    <div class="row">
-        <div class="button reset">
-            <div class="col s2 push-s8">
-                <button id="btn" class="btn waves-effect waves-light" type="submit" name="action">Resetear
-                    <i class="material-icons right">autorenew</i>
-                </button>
-            </div>
-        </div>
-        <div class="button buy">
-            <div class="col s2 push-s8">
-                <button id="btn" class="btn waves-effect waves-light" type="submit" name="action1">Comprar
-                    <i class="material-icons right">beenhere</i>
-                </button>
-            </div>
-        </div>
-    </div>
-    </div>
-
 
 
     <footer class="page-footer">
