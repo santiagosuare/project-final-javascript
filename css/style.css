@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 .fondo_cabecera {
   background: linear-gradient(to bottom, rgb(155, 151, 151), white);
 }

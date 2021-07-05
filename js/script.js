@@ -35,9 +35,10 @@ function ClickFinalPage(e) {
     if (btnxx == 'autorenew') {
         // console.log('reseteee');
         location.reload();
+        sessionStorage.clear();
     } else if (btnxx == 'beenhere') {
         // console.log('compree');
-        alert("Actualizando..." );
+        
         // console.log(totalConIVA.textContent);
     }
 
@@ -79,11 +80,13 @@ function addToCarritoItem(e) {
 function addItemCarrito(LibroNew) {
     carrito.push(LibroNew);
     renderCarrito();
+    sessionStorage.setItem('LibroBuy', JSON.stringify(carrito));
 }
 
 function renderCarrito() {
-    document.getElementById('total').innerHTML = '$   ' + carrito.map(item => item.nombre);
+    document.getElementById('total').innerHTML = ' - ' + carrito.map(item => item.nombre) + ' - ';
 
+    // sessionStorage.setItem('Libro', carrito.map(item => item.nombre));
     // console.log(carrito.map(item => item.nombre));
 
     
@@ -107,7 +110,12 @@ function renderCarrito() {
 
     document.getElementById('totalConIVA').innerHTML = '$ ' + totalConIVA;
     document.getElementById('totalSinIVA').innerHTML = '$ ' + totalSinIVA;
+    
+    sessionStorage.setItem('TotalPriceConIva', totalConIVA);
+    sessionStorage.setItem('TotalPriceSinIva', totalSinIVA);
 }
+
+
 
 
 class Persona {
@@ -120,3 +128,5 @@ class Persona {
         return 'Nombre y Apellido: ' + this.nombre + " " + this.apellido + " (DNI: " + this.dni + ")"
     }
 }
+
+

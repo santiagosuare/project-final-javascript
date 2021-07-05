@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrito de Compras</title>
+    <title>ShipBook</title>
     <!-- <link rel="stylesheet" href="./css/estilo.css"> -->
 
 
@@ -23,20 +23,20 @@
     <nav>
         <div class="nav-wrapper">
             <img width="60" height="60" class="responsive-img" src="./images/logobook.png">
-            <a href="./index.html" class="brand-logo">LogoFuturo</a>
+            <a href="./index.html" class="brand-logo">ShipBook</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="#"><i class="material-icons left">add_shopping_cart</i></a></li>
+                <li><a href="./shop.html"><i class="material-icons left">add_shopping_cart</i></a></li>
             </ul>
         </div>
     </nav>
 
 
     <div class="fondo_cabecera">
-    <!-- ITEMS -->
+        <!-- ITEMS -->
         <div class="row">
-            <div class="col s1 m3">
+            <div class="col s3 m3">
                 <div class="card">
                     <div class="card-image">
                         <img width="400" height="400" src="./images/el señor de los anillos 1.jpg">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s1 m3">
+            <div class="col s3 m3">
                 <div class="card">
                     <div class="card-image">
                         <img width="400" height="400" src="./images/harry potter 1.jpg">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s1 m3">
+            <div class="col s3 m3">
                 <div class="card">
                     <div class="card-image">
                         <img width="400" height="400" src="./images/narnia.jpg">
@@ -75,6 +75,36 @@
                     </div>
                     <div class="card-content">
                         <p>Narnia<br>El leon, la bruja y el ropero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img width="400" height="400" src="./images/codigodavinci.jpeg">
+                        <span class="transparent-text card-title">Codigo Da Vinci</span>
+                        <span class="blue-grey-text text-darken-4 card-title2">$ 800</span>
+                        <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>El Codigo Da Vinci</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s3 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img width="400" height="400" src="./images/loqueelvientosellevo.jpeg">
+                        <span class="transparent-text card-title">Lo que el Viento se llevo</span>
+                        <span class="blue-grey-text text-darken-4 card-title2">$ 1500</span>
+                        <a id="add" class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>Lo que el viento se llevo</p>
                     </div>
                 </div>
             </div>
@@ -104,7 +134,7 @@
             </div>
             <div class="button buy">
                 <div class="col s2 push-s8">
-                    <button id="btn" class="btn waves-effect waves-light" type="submit" name="action1">Comprar
+                    <button id="btn" class="btn waves-effect waves-light" type="submit" name="action1" onclick="location.href='./shop.html'">Comprar
                         <i class="material-icons right">beenhere</i>
                     </button>
                 </div>
@@ -119,31 +149,31 @@
             <div class="row">
                 <div class="col l6 s12">
                     <img width="100" height="100" class="responsive-img" src="./images/logobook.png">
-                    <h5 class="white-text">Footer Logo</h5>
-                    <p class="grey-text text-lighten-4"> Poner algo inspirador aca</p>
+                    <h5 class="white-text">ShipBook</h5>
+                    <p class="grey-text text-lighten-4"><i>"Viaja a tus sueños sin moverte de tu casa"</i></p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Link de Paginas</h5>
+                    <h5 class="white-text">Seguinos!!!</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link de facebook</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link de instagram</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link de nose que</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link de nose que 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="./images/facebook.png">  Facebook.com/ShipBook/</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="./images/instagram.png">  Instagra.com/ShipBook/</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="./images/gorjeo.png">  Twitter.com/ShipBook/</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2021 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">Un link piola</a>
+                © 2021 Copyright Text ShipBook
+                <a class="grey-text text-lighten-4 right" href="#!">ShipBook.com</a>
             </div>
         </div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
