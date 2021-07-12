@@ -58,13 +58,32 @@ addPrecioCompra();
 
 
 
-// CARGA DE DATOS
+$('form').on('submit', function(event) {
+            
+    event.preventDefault();
+    
+    let $inputName = $(this).find('#first_name');
+    console.log($inputName);
+    let inputName = $inputName.val();
+    console.log(inputName);
 
-// let namecomplete = '';
-// let name = document.getElementById('first_name'); 
-// name.addEventListener("keyup", function(){
-//     namecomplete = this.value;
-//   });
-// console.log(namecomplete);
+    let $inputApellido = $(this).find('#last_name');
+    console.log($inputApellido);
+    let inputApellido = $inputApellido.val();
+    console.log(inputApellido);
+
+    let $inputTel = $(this).find('#phone');
+    console.log($inputTel);
+    let inputTel = $inputTel.val();
+    console.log(inputTel);
+
+    let $inputEmail = $(this).find('#email');
+    console.log($inputEmail);
+    let inputEmail = $inputEmail.val();
+    console.log(inputEmail);
 
 
+    $('#text-outputFactura').text("Factura a Nombre: " + inputName + " " + inputApellido);
+    $('#text-outputFactura2').text("Telefono: " + inputTel);
+    $('#text-outputFactura3').text("Email: " + inputEmail);
+});

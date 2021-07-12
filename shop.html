@@ -58,7 +58,7 @@
 
     <div class="row">
         <h3>DATOS PERSONALES</h3>
-        <form class="col s12">
+        <form class="col s12" id="myForm">
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" type="text" class="validate" value="">
@@ -71,7 +71,7 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="phone" type="password" class="validate">
+              <input id="phone" type="tel" class="validate">
               <label for="phone">Telefono</label>
             </div>
           </div>
@@ -100,6 +100,9 @@
         </form>
     </div>
     
+    <div><p id="text-outputFactura"></p></div>
+    <div><p id="text-outputFactura2"></p></div>
+    <div><p id="text-outputFactura3"></p></div>
 
       
     <footer class="page-footer">
@@ -128,9 +131,10 @@
         </div>
     </footer>
     
-    <script src="./js/scriptBuy.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/scriptBuy.js"></script>
 </body>
 
 </html>
