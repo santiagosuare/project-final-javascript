@@ -6,11 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
-
+    <style> 
+        #map {
+            height: 100%;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+	</style> 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
@@ -39,11 +49,18 @@
                 <p class="flow-text">Su finalidad es ser un punto de encuentro entre autores y lectores en el que tu participación es una pieza muy importante.
                     <br>El catálogo de libros de ShipBook organiza por temáticas los títulos publicados por las editoriales 
                     y el conjunto constituye la más amplia y variada propuesta editorial del mercado.
+                    <br>
+                    <br>
+                     Busca su Ubicacion aqui:
                 </p>
             </div>
         </div>
     </div>
     
+    <div id ="map"> </div>
+
+    <br>
+
     <footer class="page-footer">
         <div class="container">
             <div class="row">
@@ -70,9 +87,13 @@
         </div>
     </footer>
 
-    <!-- <script src="./js/carrusel.js"></script> -->
+    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiYpM3oyyOefB9bDf1og_XTVWn6AzydPU&callback=initMap" async defer>
+    </script>
+    <script src="./js/we.js"></script>
 </body>
 
 </html>

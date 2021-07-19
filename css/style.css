@@ -11,3 +11,14 @@ main {
 .fondo_cabecera {
   background: linear-gradient(to bottom, rgb(155, 151, 151), white);
 }
+
+#map {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

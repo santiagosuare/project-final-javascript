@@ -1,0 +1,6 @@
+[
+    {"id":1,"Tarjeta":"Visa","Cuotas":"1, 3 y 6"},
+    {"id":2,"Tarjeta":"Mastercard","Cuotas":"1, 12 y 18"},
+    {"id":3,"Tarjeta":"Bankcard","Cuotas":"1 y 6"},
+    {"id":4,"Tarjeta":"Pago en Efectivo","Cuotas":"PrecioLista"}
+]
